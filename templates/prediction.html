@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{url_for('static',filename='css/selectstyle.css')}}"> 
+  <!--<link rel="stylesheet" href="selectstyle.css">-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome !</title>
+</head>
+<body>
+  <header>
+ <div class="container">
+
+   <nav>
+     <ul>
+       <li class="current"><a href="{{url_for('index')}}">Home</a></li>
+       <li><a href="{{url_for('info1')}}">Clustering</a></li>
+       <li><a href="{{url_for('prediction')}}">Prediction</a></li>
+       <li><a href="{{url_for('info')}}">Prediction comparision</a></li>
+     
+     </ul>
+   </nav>
+
+ </div>
+</header>
+<div class="main">
+  <div class="container">
+
+<!-- <p>Want to visulaize in ??</p> -->
+<div style="width:60%;margin:auto" class="head">
+
+  <p style="font-size :1.5rem;width:55%;padding-left:10%;margin-left:110px" onclick="location.href='{{url_for('women_select')}}'">Predictions for crime against women</p>
+  
+</div>
+
+    <div class="choice" style="padding-left:30%;">
+
+    <div  onclick="location.href='{{url_for('women_select')}}'" id="select_pred">
+
+    </div>
+    
+    </div>
+  </div>
+  <div style="margin-right: 6%;">
+    <p style="margin-bottom: 10%;font-size: 120%;color: black;">Click on the image to view.</p> 
+  </div>
+</div>
+</body>
+</html>
